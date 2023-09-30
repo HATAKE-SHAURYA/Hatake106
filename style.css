@@ -1,9 +1,15 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /* universal styling */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
+    font-family: 'ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 /* header styling */
 header{
@@ -12,7 +18,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .logo{
     margin-left: 2rem;
@@ -33,18 +42,124 @@ header ul li{
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 
 /* main body styling */
-
+/* page 1 starts */
 .page1{
     height: 80vh;
     width: 100vw;
-    background: #f00;
+    /* background: #f00; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container1{
-    text-align: justify;
+    text-align: center;
+}
+.container1 h3{
+    /* margin-bottom: 15px; */
+    font-size: 14px;
+}
+.container1 h1{
+    font-size: 50px;
+    margin: 15px 0;
+}
+.container1 p{
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+.btn{
+    padding: 10px 5px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    background: none;
+    color: #000;
+}
+/* page 2 starts */
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.container2 h5{
+    margin: 0 200px 0 0;
+    transform: rotate(-30deg);
+    font-size: 8px;
+    color: #9c40c7;
+}
+.container2 h2{
+    font-size: 40px;
+    margin: 0 0 15px 0;
+}
+.container2 p{
+    max-width: 70%;
+    margin: auto;
+    font-size: 13px;
+}
+/* page 3 starts */
+.page3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+}
+.tag{
+    position: relative;
+    margin: 50px 250px 10px 0;
+    transform: rotate(-30deg);
+    font-size: 8px;
+    color: #9c40c7;
+}
+.contactInfo h2{
+    font-size: 40px;
+    margin: 0 0 15px 20px;
+}
+.contactBox input{
+    /* margin: 0 0 60px 40px; */
+    position: relative;
+    left: 18%;
+    padding: 0 20px;
+    margin: 5px 0;
+    border: 1px solid #dadada;
+    color: #000;
+    font-size: 18px;
+}
+.contactBox button{
+    margin: 10px 0 0 200px;
+}
+.page3 .btt{
+    width: 100vw;
+    height: 25px;
+    position: absolute;
+    bottom: -253%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* animation */
+.animate__animated.animate__heartBeat{
+    -o-animation-iteration-count: infinite;
+}
+:root{
+    --animation-iteration: infinite;
 }
