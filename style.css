@@ -38,7 +38,7 @@ a{
 /* main body styling */
 
 .page1{
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     background: #f00;
     display: flex;
