@@ -41,4 +41,10 @@ a{
     height: 90vh;
     width: 100vw;
     background: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    text-align: justify;
 }
