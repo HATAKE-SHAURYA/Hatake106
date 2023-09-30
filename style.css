@@ -1,9 +1,11 @@
+/* universal styling */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
 }
+/* header styling */
 header{
     height: 10vh;
     width: 100vw;
@@ -31,4 +33,12 @@ header ul li{
 }
 a{
     text-decoration: none;
+}
+
+/* main body styling */
+
+.page1{
+    height: 90vh;
+    width: 100vw;
+    background: #f00;
 }
