@@ -10,6 +10,10 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+.snap{
+    scroll-snap-align: start;
 }
 /* header styling */
 header{
@@ -40,15 +44,17 @@ header ul{
 header ul li{
     padding-left: .5rem;
 }
+header nav ul li .nav-a{
+    transition: all 0.5s ease;
+}
 a{
     text-decoration: none;
     color: #000;
 }
-
 /* main body styling */
 /* page 1 starts */
 .page1{
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     /* background: #f00; */
     display: flex;
@@ -155,11 +161,48 @@ a{
     justify-content: center;
     text-align: center;
 }
-
+.page3 .btt p a{
+    transition: all 0.5s ease;
+}
 /* animation */
 .animate__animated.animate__heartBeat{
     -o-animation-iteration-count: infinite;
 }
 :root{
     --animation-iteration: infinite;
+}
+.changeCont::after{
+    content: '';
+    animation: changeCont 10s infinite ease-out;
+    color: #9c40c7;
+}
+@keyframes changeCont {
+    0%{
+        content: 'delhi';
+    }
+    20%{
+        content: 'Lucknow';
+    }
+    40%{
+            content: 'mumbai';
+    }
+    60%{
+            content: 'chennai';
+    }
+    80%{
+            content: 'kolkata';
+    }
+    100%{
+            content: 'pune';
+    }
+}
+.btt a:hover{
+    color: #dadada;
+}
+.nav-a:hover{
+    text-decoration: underline;
+}
+/* responsive code */
+@media screen (max-width:600px){
+    
 }
