@@ -204,5 +204,7 @@ a{
 }
 /* responsive code */
 @media screen (max-width:600px){
-    
+    .container1{
+        flex-direction:column;
+    }
 }
