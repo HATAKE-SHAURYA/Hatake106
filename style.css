@@ -43,6 +43,7 @@ header{
     top: 0;
     z-index: 1;
     transition: all 1s ease;
+    overflow: hidden;
 }
 .logo{
     margin-left: 2rem;
