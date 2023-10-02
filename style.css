@@ -15,6 +15,22 @@ html{
 .snap{
     scroll-snap-align: start;
 }
+.circle{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    background-color: aquamarine;
+    color: #fff;
+    position: sticky;
+    bottom: 5%;
+    right: 2%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 25px; */
+
+}
 /* header styling */
 header{
     height: 10vh;
@@ -26,6 +42,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    transition: all 1s ease;
 }
 .logo{
     margin-left: 2rem;
@@ -42,14 +59,29 @@ header ul{
     list-style-type: none;
 }
 header ul li{
-    padding-left: .5rem;
+    padding-left: 1rem;
 }
 header nav ul li .nav-a{
     transition: all 0.5s ease;
 }
+nav{
+    margin-right: 2rem;
+}
 a{
     text-decoration: none;
     color: #000;
+}
+.burger{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 2rem;
+    display: none;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 5px;
 }
 /* main body styling */
 /* page 1 starts */
@@ -113,7 +145,7 @@ a{
 }
 /* page 3 starts */
 .page3{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -151,23 +183,7 @@ a{
 .contactBox button{
     margin: 10px 0 0 200px;
 }
-.page3 .btt{
-    width: 100vw;
-    height: 25px;
-    position: absolute;
-    bottom: -253%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.page3 .btt p a{
-    transition: all 0.5s ease;
-}
 /* animation */
-.animate__animated.animate__heartBeat{
-    -o-animation-iteration-count: infinite;
-}
 :root{
     --animation-iteration: infinite;
 }
@@ -203,8 +219,24 @@ a{
     text-decoration: underline;
 }
 /* responsive code */
+/* mobile devices responsive*/
 @media screen (max-width:600px){
     .container1{
-        flex-direction:column;
+        flex-direction:column;1
+    }
+    nav{
+        display: none;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 10vh;
+    }
+    .v-class{
+        opacity: 0;
     }
 }
